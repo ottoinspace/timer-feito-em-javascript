@@ -21,6 +21,7 @@ function iniciaRelogio() {
 }
 
 iniciar.addEventListener('click', function(event){
+    clearInterval(timer);
     iniciaRelogio();
 });
 
@@ -31,4 +32,5 @@ pausar.addEventListener('click', function(event){
 zerar.addEventListener('click', function(event){
     clearInterval(timer);
     relogio.innerHTML = '00:00:00';
+    segundos = 0;
 });
