@@ -1,0 +1,21 @@
+function criaHoraDosSegundos(segundos){
+    const data = new Date(segundos * 1000);
+    return data.toLocaleTimeString('pt-br', {
+        hour12: false,
+        timeZone: 'GMT'
+    });
+}
+
+const relogio = document.querySelector('.relogio');
+const iniciar = document.querySelector('.iniciar');
+const pausar = document.querySelector('.pausar');
+const zerar = document.querySelector('.zerar');
+let segundos = 0;
+
+function iniciaRelogio() {
+    
+}
+
+iniciar.addEventListener('click', function(event){
+
+});
