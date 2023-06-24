@@ -13,9 +13,12 @@ const zerar = document.querySelector('.zerar');
 let segundos = 0;
 
 function iniciaRelogio() {
-    
+    const timer = setInterval(function(){
+        segundos++;
+        relogio.innerHTML = criaHoraDosSegundos(segundos);
+    }, 1000);
 }
 
 iniciar.addEventListener('click', function(event){
-
+    iniciaRelogio();
 });
