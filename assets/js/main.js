@@ -21,12 +21,14 @@ function iniciaRelogio() {
 }
 
 iniciar.addEventListener('click', function(event){
+    relogio.classList.remove('pausado');
     clearInterval(timer);
     iniciaRelogio();
 });
 
 pausar.addEventListener('click', function(event){
     clearInterval(timer);
+    relogio.classList.add('pausado');
 });
 
 zerar.addEventListener('click', function(event){
