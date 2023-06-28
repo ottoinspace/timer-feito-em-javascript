@@ -15,6 +15,7 @@ function relogio() {
         const el = e.target;
     
         if(el.classList.contains('zerar')){
+            relogio.classList.remove('pausado');
             clearInterval(timer);
             relogio.innerHTML = '00:00:00';
             segundos = 0;
